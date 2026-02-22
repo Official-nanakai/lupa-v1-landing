@@ -2,16 +2,19 @@
     --primary: #26C6B9;
     /* Vibrant Teal from logo */
     --primary-hover: #1E9E94;
-    --bg-dark: #0a1f23;
-    /* Deep Dark Teal */
-    --bg-card: rgba(38, 198, 185, 0.08);
-    --text-main: #ffffff;
-    --text-muted: rgba(255, 255, 255, 0.7);
+    --bg-dark: #FFFFFF;
+    /* Pure White Background */
+    --bg-card: rgba(38, 198, 185, 0.05);
+    --text-main: #0a1f23;
+    /* Deep Dark Teal for text */
+    --text-muted: #4a6367;
+    /* Muted Dark Teal */
     --accent: #80ECE1;
     /* Mint/Light Teal */
-    --glass: rgba(255, 255, 255, 0.03);
-    --glass-border: rgba(38, 198, 185, 0.2);
-    --lens-glow: rgba(38, 198, 185, 0.3);
+    --glass: rgba(0, 0, 0, 0.03);
+    /* Light Glass */
+    --glass-border: rgba(38, 198, 185, 0.15);
+    --lens-glow: rgba(38, 198, 185, 0.15);
 }
 
 * {
