@@ -4,6 +4,43 @@ import { Globe, Mail, CheckCircle, ChevronRight, Layout, Zap, Search, PlusCircle
 import { translations } from './translations';
 import './App.css';
 
+const LupaLogoIcon = ({ size = 24, className }) => (
+    <svg
+        width={size}
+        height={size}
+        viewBox="0 0 100 100"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className={className}
+    >
+        {/* Main Pin Shape */}
+        <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M50 10C30.67 10 15 25.67 15 45C15 71.25 50 90 50 90C50 90 85 71.25 85 45C85 25.67 69.33 10 50 10ZM50 68C37.3 68 27 57.7 27 45C27 32.3 37.3 22 50 22C62.7 22 73 32.3 73 45C73 57.7 62.7 68 50 68Z"
+            fill="currentColor"
+        />
+        {/* Magnifier Handle */}
+        <rect
+            x="70.5"
+            y="65.5"
+            width="12"
+            height="26"
+            rx="6"
+            transform="rotate(-45 70.5 65.5)"
+            fill="currentColor"
+        />
+        {/* Glare Detail */}
+        <path
+            d="M62 30C58 26 54 25 50 25"
+            stroke="white"
+            strokeWidth="3"
+            strokeLinecap="round"
+            opacity="0.6"
+        />
+    </svg>
+);
+
 function App() {
     const [lang, setLang] = useState('kk');
     const [email, setEmail] = useState('');
@@ -79,7 +116,7 @@ function App() {
             {/* Navigation */}
             <nav className="navbar glass-morphism">
                 <div className="logo">
-                    <Search size={24} className="logo-icon" />
+                    <LupaLogoIcon size={32} className="logo-icon" />
                     <span>Lupa</span>
                 </div>
                 <div className="nav-actions">
@@ -213,7 +250,7 @@ function MockupApp({ lang }) {
             <div className="coming-soon-badge">Beta</div>
             <header className="mockup-header">
                 <div className="mockup-logo">
-                    <Search size={14} className="logo-icon" />
+                    <LupaLogoIcon size={18} className="logo-icon" />
                     <span>Lupa</span>
                 </div>
                 <div className="search-pill">Search...</div>
@@ -250,7 +287,7 @@ function MockupApp({ lang }) {
                 </div>
             </main>
             <nav className="mockup-nav">
-                <Compass size={18} />
+                <Compass size={18} color="var(--primary)" />
                 <PlusCircle size={18} />
                 <MessageCircle size={18} />
                 <User size={18} />
